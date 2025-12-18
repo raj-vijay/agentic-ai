@@ -36,7 +36,7 @@ Python 3.10+ installed.
 
 Properly configured Google Cloud Authentication.
 
-####2. Installation
+#### 2. Installation
 
 Clone the repository and install the required dependencies:
 
@@ -46,7 +46,7 @@ git clone https://github.com/raj-vijay/agentic-ai.git
 cd agentic-ai
 pip install google-adk
 
-####3. Configuration
+#### 3. Configuration
 
 Copy the environment template and fill in your project details:
 
@@ -96,7 +96,9 @@ Contributions are what make the open-source community an amazing place to learn,
 Fork the Project
 
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
 Commit your Changes (git commit -m 'Add some AmazingFeature')
+
 Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
