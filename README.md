@@ -1,10 +1,10 @@
 # Agentic AI
 
 
-##Agentic AI with Google ADK
+#Agentic AI with Google ADK
 This repository serves as a blueprint for building, testing, and deploying autonomous agents using the Google Agent Development Kit (ADK). It transitions beyond simple prompt engineering into complex, multi-agent orchestration and goal-oriented workflows.
 
-###🌟 Key Concepts
+#🌟 Key Concepts
 Autonomous Reasoning: Agents that use LLMs (like Gemini) to plan, act, and observe results.
 
 Tool-Use (Function Calling): Native integration with external APIs, Google Search, and internal databases.
@@ -13,7 +13,8 @@ Orchestration: Multi-agent patterns (Hierarchical, Sequential, and Parallel) to 
 
 Grounding: Ensuring agent responses are backed by verifiable sources using Google's search and enterprise data tools.
 
-###📂 Project Structure
+#📂 Project Structure
+
 Plaintext
 
 ├── agents/                 # Logic for individual specialized agents
@@ -25,8 +26,10 @@ Plaintext
 ├── .env.example            # Template for API keys and Project IDs
 └── agent.py                # Main entry point for the ADK application
 
-###🚀 Getting Started
+#🚀 Getting Started
+
 1. Prerequisites
+
 A Google Cloud Project with Vertex AI API enabled.
 
 Python 3.10+ installed.
@@ -42,11 +45,12 @@ Bash
 git clone https://github.com/raj-vijay/agentic-ai.git
 cd agentic-ai
 pip install google-adk
+
 3. Configuration
+
 Copy the environment template and fill in your project details:
 
 Bash
-
 cp .env.example .env
 # Edit .env with your GOOGLE_CLOUD_PROJECT and REGION
 🛠️ Usage
@@ -72,14 +76,14 @@ Bash
 adk web
 Visit http://localhost:8000 to interact with your agents in a chat environment designed for developers.
 
-###📊 Evaluation
+#📊 Evaluation
 Agentic systems require rigorous testing. Use the built-in evaluation framework to measure success rates:
 
 Bash
 
 adk eval --config eval_config.yaml
 
-###🤝 Contributing
+#🤝 Contributing
 Contributions are what make the open-source community an amazing place to learn, inspire, and create.
 
 Fork the Project
