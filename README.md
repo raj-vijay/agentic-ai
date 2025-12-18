@@ -1,10 +1,10 @@
 # Agentic AI
 
 
-#Agentic AI with Google ADK
+## Agentic AI with Google ADK
 This repository serves as a blueprint for building, testing, and deploying autonomous agents using the Google Agent Development Kit (ADK). It transitions beyond simple prompt engineering into complex, multi-agent orchestration and goal-oriented workflows.
 
-#🌟 Key Concepts
+### 🌟 Key Concepts
 Autonomous Reasoning: Agents that use LLMs (like Gemini) to plan, act, and observe results.
 
 Tool-Use (Function Calling): Native integration with external APIs, Google Search, and internal databases.
@@ -13,10 +13,9 @@ Orchestration: Multi-agent patterns (Hierarchical, Sequential, and Parallel) to 
 
 Grounding: Ensuring agent responses are backed by verifiable sources using Google's search and enterprise data tools.
 
-#📂 Project Structure
+### 📂 Project Structure
 
-Plaintext
-
+```text
 ├── agents/                 # Logic for individual specialized agents
 │   ├── researcher.py       # Data gathering & search specialist
 │   └── writer.py           # Synthesis & content generation specialist
@@ -25,8 +24,9 @@ Plaintext
 ├── tests/                  # Evaluation cases for agentic reasoning
 ├── .env.example            # Template for API keys and Project IDs
 └── agent.py                # Main entry point for the ADK application
+```
 
-#🚀 Getting Started
+### 🚀 Getting Started
 
 1. Prerequisites
 
@@ -50,14 +50,19 @@ pip install google-adk
 
 Copy the environment template and fill in your project details:
 
-Bash
+```Bash
 cp .env.example .env
-# Edit .env with your GOOGLE_CLOUD_PROJECT and REGION
-🛠️ Usage
+
+#Edit .env with your GOOGLE_CLOUD_PROJECT and REGION
+
+### 🛠️ Usage
 Defining an Agent
 With Google ADK, agents are defined by their identity, model, and capabilities:
 
-Python
+```
+
+
+```python
 
 from google.adk.agents import Agent
 
@@ -67,8 +72,10 @@ analyst = Agent(
     instruction="Analyze market trends and provide risk assessments.",
     tools=["google_search", "custom_calculator"]
 )
+```
 
 Running the Dev UI
+
 ADK provides a built-in interface to visualize agent trajectories and debug tool calls:
 
 Bash
@@ -76,14 +83,14 @@ Bash
 adk web
 Visit http://localhost:8000 to interact with your agents in a chat environment designed for developers.
 
-#📊 Evaluation
+### 📊 Evaluation
 Agentic systems require rigorous testing. Use the built-in evaluation framework to measure success rates:
 
 Bash
 
 adk eval --config eval_config.yaml
 
-#🤝 Contributing
+### 🤝 Contributing
 Contributions are what make the open-source community an amazing place to learn, inspire, and create.
 
 Fork the Project
@@ -94,5 +101,5 @@ Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-###📜 License
+### 📜 License
 Distributed under the Apache 2.0 License. See LICENSE for more information.
