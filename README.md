@@ -28,7 +28,7 @@ Grounding: Ensuring agent responses are backed by verifiable sources using Googl
 
 ### 🚀 Getting Started
 
-1. Prerequisites
+#### 1. Prerequisites
 
 A Google Cloud Project with Vertex AI API enabled.
 
@@ -36,7 +36,7 @@ Python 3.10+ installed.
 
 Properly configured Google Cloud Authentication.
 
-2. Installation
+####2. Installation
 
 Clone the repository and install the required dependencies:
 
@@ -46,7 +46,7 @@ git clone https://github.com/raj-vijay/agentic-ai.git
 cd agentic-ai
 pip install google-adk
 
-3. Configuration
+####3. Configuration
 
 Copy the environment template and fill in your project details:
 
